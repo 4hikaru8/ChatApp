@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #f7f7f7;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background: white;
+    width: 450px;   /* 高さを指定しないのはエラー時など高さが可変するのに自動で対応するため */ 
+    border-radius: 10px;
+    filter: drop-shadow(0.5px 3px 10px rgba(0,0,0,0.3));
+}
+
+/* SIGN UP Form CSS */
+.form {
+    padding: 25px 30px;
+}
+.form header {
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+}
+.form form {
+    margin: 20px 0px;
+}
+.form form .error-txt {
+    color: #721c24;
+    background: #f8d7da;
+    padding: 8px 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: none;
+}
+.form form .name-details {
+    display: flex;
+    width: 100%;
+}
+.form form .name-details .field:first-child {
+    margin-right: 10px;
+    width: 100%;
+}
+.form form .name-details .field:last-child {
+    margin-left: 10px;
+    width: 100%;
+}
+.form form .field label{
+    margin-bottom: 5px;
+}
+.form form .field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.form form .input input {
+    height: 40px;
+    font-size: 16px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+.form form .image input {
+    font-size: 14px;
+}
+.form form .button input {
+    font-size: 14px;
+    margin-top: 15px;
+    height: 45px;
+    font-size: 17px;
+    font-weight: 400;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.form form .field i {
+    position: absolute;
+    right: 40px;
+    color: #ccc;
+    top: 59%;
+    cursor: pointer;
+}
+.form form .field i.active::before {
+    color: #333;
+    content: '\f070';
+}
+.form .link {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 16px;
+}
+.form .link a {
+    color: #333;
+}
+.form .link a:hover {
+    text-decoration: underline;
+}
