@@ -7,18 +7,7 @@
     if (mysqli_num_rows($sql) == 1){
         $output = 'チャットできるユーザーがいません。';
     }elseif (mysqli_num_rows($sql) > 0) {
-        while($row = mysqli_fetch_assoc($sql)) {
-            $output .=  '<a href="#">
-                            <div class="content">
-                                <img src="javascript/php/images/' . $row['img'] . '" alt="">
-                                <div class="details">
-                                    <span>' . $row['lname'] . ' ' . $row['fname'] . '</span>
-                                    <p>This is test message</p>
-                                </div>
-                            </div>
-                            <div class="status-dot"><i class="fas fa-circle"></i></div>
-                        </a>';
-        }
+        include 'data.php';
     }
     echo $output;
 ?>
