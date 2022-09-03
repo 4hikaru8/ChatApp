@@ -18,7 +18,6 @@ searchBar.onkeyup = () => {
     }
     // let's start Ajax
     let ajax = new XMLHttpRequest();    // creating XML object
-    // データを送信（POST）するのではなく受信（リクエスト⇔レスポンス）が目的なのでGETメソッドを使用する
     ajax.open('POST', './javascript/php/search.php', true);
     ajax.onload = ()=>{
         if(ajax.readyState === XMLHttpRequest.DONE) {

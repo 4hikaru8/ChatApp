@@ -23,7 +23,7 @@
                         <p><?php echo $row['status'] ?></p>
                     </div>
                 </div>
-                <a href="#" class="logout">LOG OUT</a>
+                <a href="javascript/php/logout.php?logout_id=<?php echo $row['unique_id']; ?>" class="logout">LOG OUT</a>
             </header>
             <div class="search">
                 <span class="text">チャット相手を選んでください。</span>
