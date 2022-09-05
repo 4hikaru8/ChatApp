@@ -268,6 +268,11 @@ body {
     color: #fff;
     border-radius: 18px 18px 0 18px;
 }
+.outgoing .reed {
+    margin-left: auto;
+    font-size: 13px;
+}
+
 .chat-box .incoming {
     display: flex;
     align-items: center;

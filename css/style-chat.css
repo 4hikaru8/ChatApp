@@ -245,6 +245,9 @@ body {
     color: #fff;
     border-radius: 18px 18px 0 18px;
 }
+.chat-box .outgoing-reed {
+    color: #468669;
+}
 .chat-box .incoming {
     display: flex;
     align-items: center;

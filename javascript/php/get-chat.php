@@ -17,7 +17,7 @@
                 if($row['outgoing_msg_id'] === $outgoing_id) { 
                     // 送信者
                     $output .= '<div class="chat outgoing">
-                                    <img src="" alt="">
+                                    <p class="reed">Reed</p>
                                     <div class="details">
                                         <p>' . $row['msg'] . '</p>
                                     </div>
